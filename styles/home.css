@@ -1,4 +1,5 @@
 @import url("global.css");
+@import url("homenavbar.css");
 
 body {
   width: 100% !important;
@@ -6,13 +7,12 @@ body {
   overflow-x: hidden;
 }
 .H-container {
-  padding: 0 15px;
+  padding: 0 20px;
 }
 /* ========= HERO SECTION HAS START ================== */
 
 .hero {
   width: 100vw;
-  height: 50vh;
   display: grid;
   place-items: center;
 }
@@ -89,12 +89,12 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  height: 50px;
+  height: 3.5rem;
   /* padding: 10px 0; */
 }
 .filter-btn {
   background-color: rgb(25, 25, 54);
-  width: 100px;
+  width: 6em;
   padding: 5px 15px;
   display: flex;
   justify-content: space-between;
@@ -123,7 +123,8 @@ body {
 .last-release-content {
   margin: 1.2rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-auto-rows: 150px;
   gap: 5px;
 }
@@ -169,20 +170,20 @@ body {
 /* ========= START: PLAYERS REVIEWS ================== */
 
 .reviews {
-  margin: 15px 0;
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .card-review {
   background-color: #1a1a2e;
-  /* height: 200px; */
   border-radius: 20px;
-  padding: 15px;
-  margin: 5px;
+  padding: 1rem;
+  margin: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.5rem;
 }
 .card-review .player-info {
   display: flex;
@@ -228,4 +229,40 @@ body {
   background-color: #2e334b;
   padding: 10px 20px;
   border-radius: 10px;
+}
+
+@media (min-width: 600px) {
+  .H-container {
+    padding: 0 4rem;
+  }
+  .last-release-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 4.5rem;
+    /* padding: 10px 0; */
+  }
+  .last-release-content {
+    margin: 1.4rem 0;
+
+    gap: 1.1rem;
+  }
+  .reviews {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card-review {
+    width: fit-content;
+    flex-grow: 1;
+    background-color: #1a1a2e;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }

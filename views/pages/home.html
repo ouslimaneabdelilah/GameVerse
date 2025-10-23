@@ -13,8 +13,31 @@
 </head>
 
 <body>
-    <header>
-        <div hx-get="../components/nav.html" hx-trigger="load" hx-swap="innerHTML"></div>
+    <header class="navbar">
+        <div class="container flex-between">
+            <div class="logo">Game<span class="vers">Verse</span></div>
+
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-btn">
+                <i class="fa-solid fa-bars">X</i>
+            </label>
+
+            <nav class="nav-links">
+                <div class="menu-header flex-between">
+                    <h2 class="menu-title">Menu</h2>
+                    <label for="menu-toggle" class="close-btn">
+                        <i class="fa-solid fa-xmark">x</i>
+                    </label>
+                </div>
+
+                <ul>
+                    <li><a href="#" class="active">Accueil</a></li>
+                    <li><a href="#">Catalogue</a></li>
+                    <li><a href="#">Communauté</a></li>
+                    <li><a href="#">Actualités</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="hero">
@@ -231,12 +254,11 @@
                 </div>
             </div>
         </section>
-      
-          <section class="last-release">
+        <section class="last-release">
             <header>
                 <div class="H-container last-release-head">
                     <div class="title">Newsletter </div>
-                    
+
                 </div>
             </header>
             <div class="last-release-content H-container">

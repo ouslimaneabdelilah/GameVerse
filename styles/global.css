@@ -6,6 +6,7 @@
     --color-primary: #3BA1FF;
     --color-accent: #C800FF;
     --color-stroke: #529FD2;
+    --color-bg-cart:#1A1A2E;
 
     --gradient-primary: linear-gradient(90deg, #3BA1FF 0%, #C800FF 100%);
     --gradient-btn: linear-gradient(90deg, #00FFFF 0%, #FF00FF 100%);
@@ -46,7 +47,9 @@ body {
     color: var(--color-text);
     line-height: 1.6;
 }
-
+.line-bottom{
+    border-bottom: 1px solid var(--color-stroke);
+}
 ul {
     list-style: none;
 }

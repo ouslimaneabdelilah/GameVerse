@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,232 @@
     <link rel="stylesheet" href="/styles/actualites.css">
     <link rel="stylesheet" href="/styles/footer.css">
     <link rel="stylesheet" href="/styles/nav.css">
+    <script src="https://kit.fontawesome.com/237dd4ebeb.js" crossorigin="anonymous"></script>
 
     <script src="/assets/htmx/htmx.min.js"></script>
 </head>
+
 <body>
     <header>
         <div hx-get="../components/nav.html" hx-trigger="load" hx-swap="innerHTML"></div>
     </header>
     <main>
+        <section class="hero-act line-bottom">
+            <h1>Actualités & <span class="bluer-title">Événements</span></h1>
+        </section>
+        <section class="carts-act line-bottom">
+            <h2>Dernières & <span class="title-act bluer-title">Actualités</span></h2>
 
+            <div class="carts-act-grid">
+                <div class="cart-act cart-act1">
+                    <img src="/assets/img/actualites/ninja.webp" alt="">
+                    <div class="content-container">
+                        <span class="date">15 Janvier 2025</span>
+                    <h2>Sortie explosive du RPG "Eternal Legends"</h2>
+                    <p class="parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore blanditiis nemo,
+                        omnis corrupti doloremque laboriosam ad. Ipsam, alias ducimus! Enim magni esse suscipit illum!
+                        Officia enim repellendus ex quos.</p>
+                    <div class="suite">
+                        <a href="">Lire le liste</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="cart-act ">
+                    <img src="/assets/img/actualites/ninja.webp" alt="">
+                    <div class="content-container">
+                        <span class="date">15 Janvier 2025</span>
+                    <h2>Sortie explosive du RPG "Eternal Legends"</h2>
+                    <p class="parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore blanditiis nemo,
+                        omnis corrupti doloremque laboriosam ad. Ipsam, alias ducimus! Enim magni esse suscipit illum!
+                        Officia enim repellendus ex quos.</p>
+                    <div class="suite">
+                        <a href="">Lire le liste</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="cart-act ">
+                    <img src="/assets/img/actualites/ninja.webp" alt="">
+                    <div class="content-container">
+                        <span class="date">15 Janvier 2025</span>
+                    <h2>Sortie explosive du RPG "Eternal Legends"</h2>
+                    <p class="parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore blanditiis nemo,
+                        omnis corrupti doloremque laboriosam ad. Ipsam, alias ducimus! Enim magni esse suscipit illum!
+                        Officia enim repellendus ex quos.</p>
+                    <div class="suite">
+                        <a href="">Lire le liste</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="cart-act ">
+                    <img src="/assets/img/actualites/ninja.webp" alt="">
+                    <div class="content-container">
+                        <span class="date">15 Janvier 2025</span>
+                    <h2>Sortie explosive du RPG "Eternal Legends"</h2>
+                    <p class="parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore blanditiis nemo,
+                        omnis corrupti doloremque laboriosam ad. Ipsam, alias ducimus! Enim magni esse suscipit illum!
+                        Officia enim repellendus ex quos.</p>
+                    <div class="suite">
+                        <a href="">Lire le liste</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="cart-act ">
+                    <img src="/assets/img/actualites/ninja.webp" alt="">
+                    <div class="content-container">
+                        <span class="date">15 Janvier 2025</span>
+                    <h2>Sortie explosive du RPG "Eternal Legends"</h2>
+                    <p class="parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore blanditiis nemo,
+                        omnis corrupti doloremque laboriosam ad. Ipsam, alias ducimus! Enim magni esse suscipit illum!
+                        Officia enim repellendus ex quos.</p>
+                    <div class="suite">
+                        <a href="">Lire le liste</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="cart-act ">
+                    <img src="/assets/img/actualites/ninja.webp" alt="">
+                    <div class="content-container">
+                        <span class="date">15 Janvier 2025</span>
+                    <h2>Sortie explosive du RPG "Eternal Legends"</h2>
+                    <p class="parg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae labore blanditiis nemo,
+                        omnis corrupti doloremque laboriosam ad. Ipsam, alias ducimus! Enim magni esse suscipit illum!
+                        Officia enim repellendus ex quos.</p>
+                    <div class="suite">
+                        <a href="">Lire le liste</a>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    </div>
+                </div>
+                
+        </section>
+        <section class="carts-evnt">
+            <h2>Dernières & <span class="title-act bluer-title">Événements</span></h2>
+            <div class="carts-evnt-grid">
+                <div class="cart-evnt">
+                    <div class="cart-aside btn">
+                        <span class="num-evnt">25</span>
+                    </div>
+                    <div class="cart-article">
+                        <p class="event-type">Tournoi</p>
+                        <h2></h2>
+                        <div class="loca">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Paris Game</span>
+                        </div>
+                        <p class="parg">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ea culpa neque. Rem necessitatibus nam voluptatibus. Temporibus magnam deserunt est ea numquam eius odit fugiat natus doloremque officiis. Omnis, quidem.
+                        </p>
+                    </div>
+                    <div class="cart-fo">
+                        <a href="" class="btn">S'inscrire</a>
+                    </div>
+                </div>
+                <div class="cart-evnt">
+                    <div class="cart-aside btn">
+                        <span class="num-evnt">25</span>
+                    </div>
+                    <div class="cart-article">
+                        <p class="event-type">Tournoi</p>
+                        <h2></h2>
+                        <div class="loca">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Paris Game</span>
+                        </div>
+                        <p class="parg">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ea culpa neque. Rem necessitatibus nam voluptatibus. Temporibus magnam deserunt est ea numquam eius odit fugiat natus doloremque officiis. Omnis, quidem.
+                        </p>
+                    </div>
+                    <div class="cart-fo">
+                        <a href="" class="btn">S'inscrire</a>
+                    </div>
+                </div>
+                <div class="cart-evnt">
+                    <div class="cart-aside btn">
+                        <span class="num-evnt">25</span>
+                    </div>
+                    <div class="cart-article">
+                        <p class="event-type">Tournoi</p>
+                        <h2></h2>
+                        <div class="loca">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Paris Game</span>
+                        </div>
+                        <p class="parg">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ea culpa neque. Rem necessitatibus nam voluptatibus. Temporibus magnam deserunt est ea numquam eius odit fugiat natus doloremque officiis. Omnis, quidem.
+                        </p>
+                    </div>
+                    <div class="cart-fo">
+                        <a href="" class="btn">S'inscrire</a>
+                    </div>
+                </div>
+                <div class="cart-evnt">
+                    <div class="cart-aside btn">
+                        <span class="num-evnt">25</span>
+                    </div>
+                    <div class="cart-article">
+                        <p class="event-type">Tournoi</p>
+                        <h2></h2>
+                        <div class="loca">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Paris Game</span>
+                        </div>
+                        <p class="parg">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ea culpa neque. Rem necessitatibus nam voluptatibus. Temporibus magnam deserunt est ea numquam eius odit fugiat natus doloremque officiis. Omnis, quidem.
+                        </p>
+                    </div>
+                    <div class="cart-fo">
+                        <a href="" class="btn">S'inscrire</a>
+                    </div>
+                </div>
+                <div class="cart-evnt">
+                    <div class="cart-aside btn">
+                        <span class="num-evnt">25</span>
+                    </div>
+                    <div class="cart-article">
+                        <p class="event-type">Tournoi</p>
+                        <h2></h2>
+                        <div class="loca">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Paris Game</span>
+                        </div>
+                        <p class="parg">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ea culpa neque. Rem necessitatibus nam voluptatibus. Temporibus magnam deserunt est ea numquam eius odit fugiat natus doloremque officiis. Omnis, quidem.
+                        </p>
+                    </div>
+                    <div class="cart-fo">
+                        <a href="" class="btn">S'inscrire</a>
+                    </div>
+                </div>
+                <div class="cart-evnt">
+                    <div class="cart-aside btn">
+                        <span class="num-evnt">25</span>
+                    </div>
+                    <div class="cart-article">
+                        <p class="event-type">Tournoi</p>
+                        <h2></h2>
+                        <div class="loca">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Paris Game</span>
+                        </div>
+                        <p class="parg">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="cart-fo">
+                        <a href="" class="btn">S'inscrire</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div hx-get="../components/footer.html" hx-trigger="load" hx-swap="innerHTML"></div>
     </footer>
 </body>
+
 </html>

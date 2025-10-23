@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/home.css">
-    <link rel="stylesheet" href="/styles/footer.css">
-    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/nav.css" />
     <script src="/assets/htmx/htmx.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div hx-get="../components/nav.html" hx-trigger="load" hx-swap="innerHTML"></div>
+      <div
+        hx-get="../components/nav.html"
+        hx-trigger="load"
+        hx-swap="innerHTML"
+      ></div>
     </header>
     <main>
-
+      <section class="hero">
+        <div class="bg">
+          <video autoplay muted loop>
+            <source src="/assets/home/bg.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="info">
+          <div class="logo">Game<span>Verse</span></div>
+          <div class="title">Entrez dans le GameVerse</div>
+          <div class="sub-title">
+            Explorez les mondes, vivez l’aventure, rejoignez la communauté.
+          </div>
+          <div class="info-btn">Découvrir les jeux</div>
+        </div>
+      </section>
     </main>
     <footer>
-        <div hx-get="../components/footer.html" hx-trigger="load" hx-swap="innerHTML"></div>
+      <div
+        hx-get="../components/footer.html"
+        hx-trigger="load"
+        hx-swap="innerHTML"
+      ></div>
     </footer>
-</body>
+  </body>
 </html>

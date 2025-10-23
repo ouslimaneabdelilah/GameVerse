@@ -17,8 +17,8 @@
 }
 
 .vers {
-  color: var(--color-stroke); 
-  text-shadow: -1px 1px 2px var(--gradient-primary);
+  color: var(--color-stroke);
+  ;
 }
 
 
@@ -52,7 +52,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
   transition: right 0.4s ease-in-out;
   z-index: 100;
   border-left: 1px solid rgba(82, 159, 210, 0.3);
@@ -71,8 +70,8 @@
   font-family: var(--font-main);
   font-size: 1.2rem;
   background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .close-btn {
@@ -130,8 +129,8 @@
 
 .active {
   background: var(--gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+    color: transparent;
   font-weight: bold;
 }
 
@@ -141,6 +140,14 @@
   .close-btn,
   .menu-title {
     display: none;
+  }
+  .navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  .content-with-navbar {
+    margin-top: 64px; 
   }
 
   .nav-links {

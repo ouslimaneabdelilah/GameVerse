@@ -135,7 +135,7 @@
   font-weight: bold;
 }
 
-/* @media (min-width: 768px) {
+ @media (min-width: 768px) {
   .menu-btn,
   #menu-toggle,
   .close-btn,
@@ -168,4 +168,4 @@
   .nav-links ul li a::after {
     bottom: -5px;
   }
-} */
+} 

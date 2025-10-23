@@ -1,15 +1,16 @@
 @import url("global.css");
-.wraper-section{
+/* .wraper-section{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 .wraper{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 
 }
 .inscription-form{
@@ -20,10 +21,10 @@
     border: 1px solid rgba(185, 25, 129, 0.808);
     background-color: var(--color-bg-light);
 }
-.wraper h2{
+
+.wraper h2,.Abonnement-content h2,.conditions-utilisateur-section h2 {
     font-size: 35px;
     font-family: Robot;
-    text-align: center;
     background: var(--gradient-btn);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -46,8 +47,8 @@
     border: none;
     outline: none;
     border: 2px solid rgb(230, 129, 255);
-     text-align: center;
-     background-color: rgb(168, 175, 175);
+    text-align: center;
+    background-color: rgb(168, 175, 175);
 }
 .wraper .Remember-forget{
     display: flex;
@@ -67,8 +68,8 @@
     text-decoration: underline;
 }
 .wraper .btn{
-    width:95%;
-    margin-left: 10px;
+    width:50%;
+    margin-left: 80px;
     height:45px;
     border:none;
     outline: none;
@@ -97,22 +98,68 @@
     color: white;
 }
 .Abonnement-section{
-    background-color: red;
     margin-top:30px ;
     width: 100%;
-    height: 640px;
-}.Abonnement-content{
-    background-color: aqua;
-    width: 100%;
     height: 100%;
+}.Abonnement-content{
+    width: 100%;
+     height: 100%;
 }
 .Abonnement-form{
-    background-color: yellow;
     display: flex;
+    height: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-}.Abonnement-form div{
-    width: 70px;
-    height: 600px;
+    gap: 10px;
+}.Abonnement-form .offre-1{
+    width: 48%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgba(185, 25, 129, 0.808);
+    border-radius: 5px;
+    background-color:var(--color-bg-light) ;
+}
+.Abonnement-form #offre-3{
+    position: relative;
+    right: -110px;
+
+}.Abonnement-form img{
+    width: 160px;
+    height: 100px;
+}.Abonnement-form span{
+    color: rgb(174, 22, 22);
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Super Sliced";
+}
+.sant{
+    position: relative;
+    top: 30px;
+    right: -30px;
+}.offre-1 p{
+    font-family: "Super Sliced";
+    margin-left: 18px;
+}.offre-1 button{
+    width: 90px;
+    border-radius:10px ;
+    box-shadow: var(--shadow-strong);
+    background-color: rgb(196, 14, 14);
+    color: rgb(204, 209, 213);
+    margin:10px 0 10px;
+    text-transform: uppercase;
+    height: 30px;
+}
+.conditions-utilisateur-section{
+    margin-top:40px ;
+    padding: 10px;
+}.conditions h4{
+    font-size: 15px;
+    color: var(--color-stroke);
+}.conditions p{
+    font-weight: 0;
+    font-size: 10px;
 }

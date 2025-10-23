@@ -2,7 +2,11 @@
 
 body {
   width: 100% !important;
-  overflow: hidden;
+
+  overflow-x: hidden;
+}
+.H-container {
+  padding: 0 15px;
 }
 /* ========= HERO SECTION HAS START ================== */
 
@@ -42,13 +46,11 @@ body {
   position: relative;
   grid-column: 1/2;
   grid-row: 1/2;
-  /* background-color: red; */
-
-  padding: 2%;
   display: flex;
   text-align: center;
   flex-direction: column;
   max-height: 100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -81,5 +83,55 @@ body {
 /* ========= HERO SECTION HAS END ================== */
 
 /* ========= START: "Dernières sorties & notes des joueurs"  ================== */
+
+.last-release {
+  /* background-color: var(--color-bg); */
+  /* padding: 20px 0; */
+}
+
+.last-release-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 50px;
+  /* padding: 10px 0; */
+}
+.filter-btn {
+  background-color: rgb(25, 25, 54);
+  width: 100px;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-release-content {
+  margin: 15px 0;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 150px;
+  gap: 5px;
+}
+
+.last-release-card {
+  background-color: #0e0e18;
+  border-radius: 10px;
+  border: 2px #2e334b solid;
+}
+
+.last-release-card img {
+  width: 100%;
+  height: 60%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-info {
+  padding: 5px 10px;
+}
+.card-info .date {
+  font-size: 0.5em;
+  color: #838383;
+}
 
 /* ========= END: Dernières sorties & notes des joueurs ================== */

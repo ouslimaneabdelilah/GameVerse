@@ -84,11 +84,6 @@ body {
 
 /* ========= START: "Dernières sorties & notes des joueurs"  ================== */
 
-.last-release {
-  /* background-color: var(--color-bg); */
-  /* padding: 20px 0; */
-}
-
 .last-release-head {
   display: flex;
   justify-content: space-between;
@@ -103,11 +98,30 @@ body {
   padding: 5px 15px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+.filter-btn .options {
+  display: none;
+}
+
+.filter-btn:hover .options {
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  top: 40px;
+  left: 0;
+  border-radius: 10px;
+  background-color: #1a1a2e;
+  width: 100px;
+  height: max-content;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .last-release-content {
-  margin: 15px 0;
-  /* background-color: red; */
+  margin: 1.2rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 150px;
@@ -135,3 +149,27 @@ body {
 }
 
 /* ========= END: Dernières sorties & notes des joueurs ================== */
+
+/* ========= START: RANKING OF GAMES ================== */
+
+.classement {
+  padding: 1px 15px;
+  background-color: #1a1a2e;
+}
+
+.card-info-2 {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ========= END: RANKING OF GAMES ================== */
+
+/* ========= START: PLAYERS REVIEWS ================== */
+
+.reviews {
+}
+
+.card-review {
+}

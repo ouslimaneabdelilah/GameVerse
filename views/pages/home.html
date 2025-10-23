@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -8,186 +9,233 @@
     <link rel="stylesheet" href="/styles/footer.css" />
     <link rel="stylesheet" href="/styles/nav.css" />
     <script src="/assets/htmx/htmx.min.js"></script>
-    <script
-      src="https://kit.fontawesome.com/yourcode.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
     <header>
-      <div
-        hx-get="../components/nav.html"
-        hx-trigger="load"
-        hx-swap="innerHTML"
-      ></div>
+        <div hx-get="../components/nav.html" hx-trigger="load" hx-swap="innerHTML"></div>
     </header>
     <main>
-      <section class="hero">
-        <div class="bg">
-          <video autoplay muted loop>
-            <source src="/assets/home/bg.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="info H-container">
-          <div class="logo">Game<span>Verse</span></div>
-          <div class="title">Entrez dans le GameVerse</div>
-          <div class="sub-title">
-            Explorez les mondes, vivez l’aventure, rejoignez la communauté.
-          </div>
-          <div class="info-btn">Découvrir les jeux</div>
-        </div>
-      </section>
-      <section class="last-release">
-        <header>
-          <div class="H-container last-release-head">
-            <div class="title">Dernières sorties</div>
-            <div class="filter-btn">
-              <div class="filter-type">Jeux</div>
-              <span class="filter-arrow"> &#8619 </span>
-              <div class="options">
-                <div class="opt-1">Jeux</div>
-                <div class="opt-2">Jeuxeur</div>
-                
-              </div>
+        <section class="hero">
+            <div class="bg">
+                <video autoplay muted loop>
+                    <source src="/assets/home/bg.mp4" type="video/mp4" />
+                </video>
             </div>
-          </div>
-        </header>
-        <div class="last-release-content H-container">
-         
-          <div class="last-release-card">
-            <img src="/assets/home/hollow.avif" alt="Hollow" />
-            <div class="card-info">
-              <div class="nom">Hollow Knignt</div>
-              <div class="date">7 may 2024</div>
+            <div class="info H-container">
+                <div class="logo">Game<span>Verse</span></div>
+                <div class="title">Entrez dans le GameVerse</div>
+                <div class="sub-title">
+                    Explorez les mondes, vivez l’aventure, rejoignez la communauté.
+                </div>
+                <div class="info-btn">Découvrir les jeux</div>
             </div>
-          </div>
-          
-          <div class="last-release-card">
-            <img src="/assets/home/hollow.avif" alt="Hollow" />
-            <div class="card-info">
-              <div class="nom">Hollow Knignt</div>
-              <div class="date">7 may 2024</div>
-            </div>
-          </div>
-          <div class="last-release-card">
-            <img src="/assets/home/hollow.avif" alt="Hollow" />
-            <div class="card-info">
-              <div class="nom">Hollow Knignt</div>
-              <div class="date">7 may 2024</div>
-            </div>
-          </div>
+        </section>
+        <section class="last-release">
+            <header>
+                <div class="H-container last-release-head">
+                    <div class="title">Dernières sorties</div>
+                    <div class="filter-btn">
+                        <div class="filter-type">Jeux</div>
+                        <span class="filter-arrow"> &#8619 </span>
+                        <div class="options">
+                            <div class="opt-1">Jeux</div>
+                            <div class="opt-2">Jeuxeur</div>
 
-          <div class="last-release-card">
-            <img src="/assets/home/hollow.avif" alt="Hollow" />
-            <div class="card-info">
-              <div class="nom">Hollow Knignt</div>
-              <div class="date">7 may 2024</div>
-            </div>
-          </div>
-          <div class="last-release-card">
-            <img src="/assets/home/hollow.avif" alt="Hollow" />
-            <div class="card-info">
-              <div class="nom">Hollow Knignt</div>
-              <div class="date">7 may 2024</div>
-            </div>
-          </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="last-release-content H-container">
 
-          <div class="last-release-card">
-            <img src="/assets/home/hollow.avif" alt="Hollow" />
-            <div class="card-info">
-              <div class="nom">Hollow Knignt</div>
-              <div class="date">7 may 2024</div>
+                <div class="last-release-card">
+                    <img src="/assets/home/hollow.avif" alt="Hollow" />
+                    <div class="card-info">
+                        <div class="nom">Hollow Knignt</div>
+                        <div class="date">7 may 2024</div>
+                    </div>
+                </div>
+
+                <div class="last-release-card">
+                    <img src="/assets/home/hollow.avif" alt="Hollow" />
+                    <div class="card-info">
+                        <div class="nom">Hollow Knignt</div>
+                        <div class="date">7 may 2024</div>
+                    </div>
+                </div>
+                <div class="last-release-card">
+                    <img src="/assets/home/hollow.avif" alt="Hollow" />
+                    <div class="card-info">
+                        <div class="nom">Hollow Knignt</div>
+                        <div class="date">7 may 2024</div>
+                    </div>
+                </div>
+
+                <div class="last-release-card">
+                    <img src="/assets/home/hollow.avif" alt="Hollow" />
+                    <div class="card-info">
+                        <div class="nom">Hollow Knignt</div>
+                        <div class="date">7 may 2024</div>
+                    </div>
+                </div>
+                <div class="last-release-card">
+                    <img src="/assets/home/hollow.avif" alt="Hollow" />
+                    <div class="card-info">
+                        <div class="nom">Hollow Knignt</div>
+                        <div class="date">7 may 2024</div>
+                    </div>
+                </div>
+
+                <div class="last-release-card">
+                    <img src="/assets/home/hollow.avif" alt="Hollow" />
+                    <div class="card-info">
+                        <div class="nom">Hollow Knignt</div>
+                        <div class="date">7 may 2024</div>
+                    </div>
+                </div>
+
             </div>
-          </div>
-         
-        </div>
-      </section>
-      <!-- new section -->
-      <section class="last-release">
-        <header>
-          <div class="H-container last-release-head">
-            <div class="title">Classement des jeux</div>
-            <div class="filter-btn">
-              <div class="filter-type">Annee</div>
-              <span class="filter-arrow"> &#8619 </span>
-              <div class="options">
-                <div class="opt-1">Annee</div>
-                <div class="opt-2">Categorie</div>
-                
-              </div>
+        </section>
+        <!-- new section -->
+        <section class="last-release">
+            <header>
+                <div class="H-container last-release-head">
+                    <div class="title">Classement des jeux</div>
+                    <div class="filter-btn">
+                        <div class="filter-type">Annee</div>
+                        <span class="filter-arrow"> &#8619 </span>
+                        <div class="options">
+                            <div class="opt-1">Annee</div>
+                            <div class="opt-2">Categorie</div>
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="last-release-content H-container">
+
+                <div class="last-release-card">
+                    <img src="/assets/home/hollow.avif" alt="Hollow" />
+                    <div class="card-info-2">
+                        <div class="nom">Hollow Knignt</div>
+                        <div class="classement">1</div>
+                    </div>
+                </div>
+                <div class="last-release-card">
+                    <img src="/assets/home/hollow.avif" alt="Hollow" />
+                    <div class="card-info-2">
+                        <div class="nom">Hollow Knignt</div>
+                        <div class="classement">1</div>
+                    </div>
+                </div>
+                <div class="last-release-card">
+                    <img src="/assets/home/hollow.avif" alt="Hollow" />
+                    <div class="card-info-2">
+                        <div class="nom">Hollow Knignt</div>
+                        <div class="classement">1</div>
+                    </div>
+                </div>
+                <div class="last-release-card">
+                    <img src="/assets/home/hollow.avif" alt="Hollow" />
+                    <div class="card-info-2">
+                        <div class="nom">Hollow Knignt</div>
+                        <div class="classement">1</div>
+                    </div>
+                </div>
+                <div class="last-release-card">
+                    <img src="/assets/home/hollow.avif" alt="Hollow" />
+                    <div class="card-info-2">
+                        <div class="nom">Hollow Knignt</div>
+                        <div class="classement">1</div>
+                    </div>
+                </div>
+                <div class="last-release-card">
+                    <img src="/assets/home/hollow.avif" alt="Hollow" />
+                    <div class="card-info-2">
+                        <div class="nom">Hollow Knignt</div>
+                        <div class="classement">1</div>
+                    </div>
+                </div>
+
+
+
             </div>
-          </div>
-        </header>
-        <div class="last-release-content H-container">
-         
-          <div class="last-release-card">
-            <img src="/assets/home/hollow.avif" alt="Hollow" />
-            <div class="card-info-2">
-              <div class="nom">Hollow Knignt</div>
-              <div class="classement">1</div>
+        </section>
+        <section class="last-release">
+            <header>
+                <div class="H-container last-release-head">
+                    <div class="title">Témoignages de gamers</div>
+                </div>
+            </header>
+            <div class="reviews H-container">
+                <div class="card-review">
+                    <div class="player-info">
+                        <div class="avatar">
+                            <img src="/assets/home/av.webp" alt="Avatar">
+                        </div>
+                        <div class="data">
+                            <div class="player-name">SoundWave01</div>
+                            <span class="review-time">24/11/25</span>
+                        </div>
+                    </div>
+                    <div class="player-review">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, reiciendis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, minima.
+                    </div>
+                </div>
+                <div class="card-review">
+                    <div class="player-info">
+                        <div class="avatar">
+                            <img src="/assets/home/av.webp" alt="Avatar">
+                        </div>
+                        <div class="data">
+                            <div class="player-name">SoundWave01</div>
+                            <span class="review-time">24/11/25</span>
+                        </div>
+                    </div>
+                    <div class="player-review">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, reiciendis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, minima.
+                    </div>
+                </div>
+                <div class="card-review">
+                    <div class="player-info">
+                        <div class="avatar">
+                            <img src="/assets/home/av.webp" alt="Avatar">
+                        </div>
+                        <div class="data">
+                            <div class="player-name">SoundWave01</div>
+                            <span class="review-time">24/11/25</span>
+                        </div>
+                    </div>
+                    <div class="player-review">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, reiciendis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, minima.
+                    </div>
+                </div>
+                <div class="card-review">
+                    <div class="player-info">
+                        <div class="avatar">
+                            <img src="/assets/home/av.webp" alt="Avatar">
+                        </div>
+                        <div class="data">
+                            <div class="player-name">SoundWave01</div>
+                            <span class="review-time">24/11/25</span>
+                        </div>
+                    </div>
+                    <div class="player-review">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, reiciendis.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, minima.
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="last-release-card">
-            <img src="/assets/home/hollow.avif" alt="Hollow" />
-            <div class="card-info-2">
-              <div class="nom">Hollow Knignt</div>
-              <div class="classement">1</div>
-            </div>
-          </div>
-          <div class="last-release-card">
-            <img src="/assets/home/hollow.avif" alt="Hollow" />
-            <div class="card-info-2">
-              <div class="nom">Hollow Knignt</div>
-              <div class="classement">1</div>
-            </div>
-          </div>
-          <div class="last-release-card">
-            <img src="/assets/home/hollow.avif" alt="Hollow" />
-            <div class="card-info-2">
-              <div class="nom">Hollow Knignt</div>
-              <div class="classement">1</div>
-            </div>
-          </div>
-          <div class="last-release-card">
-            <img src="/assets/home/hollow.avif" alt="Hollow" />
-            <div class="card-info-2">
-              <div class="nom">Hollow Knignt</div>
-              <div class="classement">1</div>
-            </div>
-          </div>
-          <div class="last-release-card">
-            <img src="/assets/home/hollow.avif" alt="Hollow" />
-            <div class="card-info-2">
-              <div class="nom">Hollow Knignt</div>
-              <div class="classement">1</div>
-            </div>
-          </div>
-          
+        </section>
         
-         
-        </div>
-      </section>
-      <section class="last-release">
-        <header>
-          <div class="H-container last-release-head">
-            <div class="title">Témoignages de gamers</div>
-          </div>
-        </header>
-        <div class="reviews H-container">
-         <div class="card-review"></div>
-         
-          
-        
-         
-        </div>
-      </section>
     </main>
     <footer>
-      <div
-        hx-get="../components/footer.html"
-        hx-trigger="load"
-        hx-swap="innerHTML"
-      ></div>
+        <div hx-get="../components/footer.html" hx-trigger="load" hx-swap="innerHTML"></div>
     </footer>
-  </body>
+</body>
+
 </html>

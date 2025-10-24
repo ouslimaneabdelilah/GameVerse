@@ -1,7 +1,7 @@
 @import url("global.css");
 
 .categories{
-    background-color: var(--color-primary);
+    background-color: var( --color-bg-light);
     display: flex;
     justify-content: space-evenly;
     gap: 4px;
@@ -67,7 +67,7 @@
 }
 .filters-select select{
     color: white;
-    background-color: var(--color-primary);
+    background-color: var(--color-bg-cart);
     border: none;
     padding: 10px 50px;
 }

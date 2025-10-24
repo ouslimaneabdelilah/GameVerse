@@ -2,6 +2,7 @@
 
 .navbar {
   background-color: var(--color-bg);
+
   border-bottom: 1px solid var(--color-stroke);
   padding: 1rem 0;
   position: sticky;
@@ -18,16 +19,14 @@
 
 .vers {
   color: var(--color-stroke);
-  ;
 }
-
 
 #menu-toggle {
   display: none;
 }
 
 .menu-btn {
-   color: var(--color-text);
+  color: var(--color-text);
   font-size: 1.7rem;
   cursor: pointer;
   z-index: 1100;
@@ -38,14 +37,17 @@
   transform: scale(1.1);
 }
 
-
 .nav-links {
   position: fixed;
   top: 0;
   right: -100%;
   width: 50%;
   height: 100vh;
-  background: linear-gradient(180deg, rgba(15, 15, 30, 0.97) 0%, rgba(10, 10, 15, 0.97) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(15, 15, 30, 0.97) 0%,
+    rgba(10, 10, 15, 0.97) 100%
+  );
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 25px rgba(82, 159, 210, 0.4);
   padding: 2rem 1.5rem;
@@ -82,7 +84,7 @@
 }
 
 #menu-toggle:checked + .menu-btn {
-  opacity: 0; 
+  opacity: 0;
   pointer-events: none;
 }
 
@@ -130,24 +132,24 @@
 .active {
   background: var(--gradient-primary);
   background-clip: text;
-    color: transparent;
+  color: transparent;
   font-weight: bold;
 }
 
- @media (min-width: 768px) {
+@media (min-width: 768px) {
   .menu-btn,
   #menu-toggle,
   .close-btn,
   .menu-title {
     display: none;
   }
-  .navbar{
+  .navbar {
     position: fixed;
     width: 100%;
     top: 0;
   }
   .content-with-navbar {
-    margin-top: 64px; 
+    margin-top: 64px;
   }
 
   .nav-links {

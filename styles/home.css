@@ -1,1 +1,267 @@
 @import url("global.css");
+@import url("homenavbar.css");
+
+body {
+  width: 100% !important;
+
+  overflow-x: hidden;
+}
+.H-container {
+  padding: 0 20px;
+}
+/* ========= HERO SECTION HAS START ================== */
+
+.hero {
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.bg {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.bg video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  max-height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.info .logo {
+  color: white;
+  font-size: 3.2rem;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.title {
+  font-size: 1.1rem;
+}
+.sub-title {
+  font-size: 0.8rem;
+}
+
+.info-btn {
+  display: inline-block;
+  background-color: #1a1a2e;
+  border-radius: 5px;
+  border: 1px solid #2e334b;
+  padding: 10px 15px;
+}
+
+/* ========= HERO SECTION HAS END ================== */
+
+/* ========= START: "Dernières sorties & notes des joueurs"  ================== */
+
+.last-release-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 3.5rem;
+  /* padding: 10px 0; */
+}
+.filter-btn {
+  background-color: rgb(25, 25, 54);
+  width: 6em;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.filter-btn .options {
+  display: none;
+}
+
+.filter-btn:hover .options {
+  padding: 10px;
+  position: absolute;
+  display: flex;
+  top: 40px;
+  left: 0;
+  border-radius: 10px;
+  background-color: #1a1a2e;
+  width: 100px;
+  height: max-content;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.last-release-content {
+  margin: 1.2rem 0;
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-auto-rows: 150px;
+  gap: 5px;
+}
+
+.last-release-card {
+  background-color: #0e0e18;
+  border-radius: 10px;
+  border: 2px #2e334b solid;
+}
+
+.last-release-card img {
+  width: 100%;
+  height: 60%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-info {
+  padding: 5px 10px;
+}
+.card-info .date {
+  font-size: 0.5em;
+  color: #838383;
+}
+
+/* ========= END: Dernières sorties & notes des joueurs ================== */
+
+/* ========= START: RANKING OF GAMES ================== */
+
+.classement {
+  padding: 1px 15px;
+  background-color: #1a1a2e;
+}
+
+.card-info-2 {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ========= END: RANKING OF GAMES ================== */
+
+/* ========= START: PLAYERS REVIEWS ================== */
+
+.reviews {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card-review {
+  background-color: #1a1a2e;
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.card-review .player-info {
+  display: flex;
+  height: 50%;
+}
+.data {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.card-review .player-info .avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  grid-column: 1/3;
+  grid-row: 1/5;
+}
+.avatar img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.player-info .player-name {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  background-color: #0e0e18;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.player-info .review-time {
+  grid-column: 3/5;
+  grid-row: 3/5;
+  background-color: #0e0e18;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.player-review {
+  background-color: #2e334b;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+@media (min-width: 600px) {
+  .H-container {
+    padding: 0 4rem;
+  }
+  .last-release-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 4.5rem;
+    /* padding: 10px 0; */
+  }
+  .last-release-content {
+    margin: 1.4rem 0;
+
+    gap: 1.1rem;
+  }
+  .reviews {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .card-review {
+    width: fit-content;
+    flex-grow: 1;
+    background-color: #1a1a2e;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

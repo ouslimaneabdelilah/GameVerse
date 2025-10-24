@@ -1,1 +1,344 @@
 @import url("global.css");
+/* .wraper-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}   */
+.wraper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inscription-form{
+    color: aliceblue;
+    width: 100%;
+    box-shadow: 0 0 10px var(--color-accent);
+    border-radius: 10px;
+    border: 1px solid rgba(185, 25, 129, 0.808);
+    background-color: rgb(5, 5, 17);
+}
+
+.wraper h2,.Abonnement-content h2,.condition-title h2 {
+    font-size: 40px;
+    font-family: "Super Sliced";
+    background: var(--gradient-btn);
+   background-clip: text;
+  letter-spacing: .3rem;
+  color: transparent;
+  text-align: center;
+  margin: 10px 0 30px;
+}
+.wraper h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: "Super Sliced";
+    letter-spacing: .5rem;
+    color: var(--color-stroke);
+}
+.wraper .input-box{
+    width : 100%;
+    height:50px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.input-box input{
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(230, 129, 255);
+    text-align: center;
+    background-color: rgb(168, 175, 175);
+}
+.wraper .Remember-forget{
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+    color: rgb(169, 166, 166);
+    font-weight: 100;
+}
+.Remember-forget label input{
+    margin-right: 12px;
+}
+.Remember-forget a{
+    color: rgb(169, 166, 166);
+}
+
+.login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wraper .btn{
+    width:50%;
+    height:45px;
+    border:none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    font-size: 16px;
+    color:#333;
+    font-weight: 600;
+}
+.wraper .register-link{
+    font-size:14.5px;
+    text-align:center;
+    margin-top:20px;
+    margin: 20px 0 15px;
+}
+.register-link a{
+    font-size: 18px;
+    text-decoration: underline;
+    color: rgb(168, 25, 25);
+}
+.register-link p{
+    color:aliceblue;
+    text-decoration:none;
+    font-weight: 600;
+}
+.Abonnement-section{
+    margin-top:30px ;
+    width: 100%;
+    height: 100%;
+}.Abonnement-content{
+    width: 100%;
+     height: 100%;
+}
+.Abonnement-form{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+} .offre-1,.offre-2,.offre-3{
+    width: 70%;      width: 70%;
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(238, 159, 11);
+    border-radius: 10px;
+    background-color:rgb(3, 3, 18);
+    position: relative;
+}.offre-2{
+  border: 1px solid rgba(14, 120, 181, 0.808);
+}.offre-3{
+  border: 1px solid rgba(198, 23, 137, 0.808);
+}
+.offre-1 h3,.offre-2 h3,.offre-3 h3{
+    position: absolute;
+    top: 8px;
+    font-family: "Super Sliced";
+    font-weight: 200;
+}
+.Abonnement-form img{
+    width: 80%;
+    height: 30%;
+}.free-image{
+    border: 1px solid rgb(255, 183, 0);
+    box-shadow: 0 0 15px rgb(255, 183, 0);
+}
+ .premium-image{
+      border: 1px solid rgb(0, 50, 120);
+      box-shadow: 0 0 15px blue;
+  }
+  .pro-image{
+      border: 1px solid rgb(221, 6, 175);
+      box-shadow: 0 0 15px rgba(255, 20, 228, 0.6); ;
+  }
+.Abonnement-form span{
+    color: rgb(174, 22, 22);
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Super Sliced";
+}
+.sant{
+    position: relative;
+    top: 25px;
+    right: -25px;
+}.offre-1 p,.offre-2 p,.offre-3 p{
+    font-family: "Super Sliced";
+    margin-left: 30px;
+}.offre-1 .button1,.offre-2 .button2,.offre-3 .button3{
+    width: 105px;
+    border-radius:10px ;
+    box-shadow: var(--shadow-strong);
+    background-color: rgb(238, 159, 11);
+    color: rgb(204, 209, 213);
+    text-transform: uppercase;
+    height: 35px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 20px;
+}
+.offre-2 .button2{
+    background-color: rgb(9, 138, 207);
+}
+.offre-3 .button3{
+    background-color: rgb(186, 12, 123);
+}
+.conditions-utilisateur-section{
+    margin-top:40px ;
+    padding: 10px;
+}.conditions h4{
+    font-size: 15px;
+    color: var(--color-stroke);
+}.conditions p{
+    font-weight: 0;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .wraper {
+    width: 100%;
+    height: fit-content;
+  }
+  .inscription{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inscription-form {
+    width: 35%;    
+    height: 750px;
+  }
+  .wraper h1 {
+    text-align: center;
+  }
+ .wraper .input-box{
+    width : 100%;
+    height:90px;
+}
+  .input-box input{
+    width: 70%;
+    height: 60px;
+    font-size: 20px;
+  }
+  .login{
+    width: 100%;
+    margin-top: 25px;
+    height: 80px;
+}
+  .wraper .Remember-forget{
+    margin: 15px;
+}
+.wraper .Remember-forget a:hover{
+    text-decoration: underline;
+    color: rgb(145, 3, 3);
+}
+.wraper .register-link{
+    margin-top:5px;
+
+}.register-link p a{
+    font-size: 18px;
+    color: red;
+    text-decoration: underline;
+}
+.register-link p{
+    color:aliceblue;
+    text-decoration:none;
+    font-weight: 600;
+}.register-link a:hover{
+    transform: scaleY(-30px);
+}
+  .Abonnement-section {
+    margin-top: 60px;
+  }
+
+  .Abonnement-form {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 80px;
+  }
+  .Abonnement-content h2{
+    padding-left:15px ;
+    text-align: center;
+  }
+
+  .Abonnement-form .offre-1,.offre-2,.offre-3{
+    width: 25%;
+    height: 600px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .Abonnement-form .offre-1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(245, 148, 3, 0.8);
+  }
+  .offre-2:hover{
+       transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(28, 5, 234, 0.8);
+  }
+  .offre-3:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(223, 9, 148, 0.8);
+  }
+  .free-image,.premium-image,.pro-image{
+    width: 80%;
+    height: 30%;
+    border: 1px solid rgb(255, 183, 0);
+    box-shadow: rgb(255, 183, 0);
+  }
+  .premium-image{
+    border: 1px solid rgb(0, 50, 120);
+    box-shadow: blue;
+  }
+    .pro-image{
+    border: 1px solid rgb(221, 6, 175);
+    box-shadow: rgb(224, 1, 205);
+  }
+  .button1{
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 800;
+  }
+   .button2 {
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 800;
+  }
+   .button3{
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .offre-1 button:hover,.offre-2 button:hover,.offre-3 button:hover{
+    transform: scaleX(-5px);
+    background-color: var(--color-accent);
+  }
+.offre-1 h3,.offre-2 h3,.offre-3 h3{
+    position: absolute;
+    top: 0;
+    padding: 15px;
+    font-family: "Super Sliced";
+}
+  .conditions-utilisateur-section {
+    width: 100%;
+  }
+  .conditions h4 {
+    font-size: 25px;
+    font-family: "Roboto";
+  }
+
+  .conditions p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}

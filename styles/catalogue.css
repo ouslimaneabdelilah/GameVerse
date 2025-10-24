@@ -1,1 +1,82 @@
 @import url("global.css");
+
+.categories{
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4px;
+    padding: 20px 10px;
+}
+.filtres{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 20px 10px;
+}
+.fiches-jeux{
+    width: 100%;
+    height: fit-content;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.cart-jeux{
+    background: var(--color-bg-cart);
+    box-shadow: 0 0 8px 3px rgb(24, 21, 21);
+    border-radius: 10px;
+    transition: box-shadow 0.6s ease-in-out, transform 0.3s ease;
+}
+
+.cart-jeux:hover{
+    box-shadow: 0 0 8px 3px var(--color-accent);
+    scale: translateY(-13px);
+}
+.img img{
+    height: 180px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.starts{
+    color: rgb(231, 177, 0);
+}
+.box-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+
+}
+.titre-jeux{
+    text-transform: uppercase;
+}
+.lien-jeux{
+    letter-spacing: 2px;
+    color: var(--color-primary);
+}
+@media (min-width: 1024px){
+    .fiches-jeux{
+
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+}
+.filtres{
+    display: flex;
+    align-items: center;
+}
+.filters-select select{
+    color: white;
+    background-color: var(--color-primary);
+    border: none;
+    padding: 10px 50px;
+}

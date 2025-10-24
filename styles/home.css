@@ -250,9 +250,8 @@ body {
   }
   .reviews {
     margin: 3rem 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   .card-review {
     width: fit-content;
